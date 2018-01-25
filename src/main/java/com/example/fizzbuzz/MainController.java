@@ -18,7 +18,7 @@ public class MainController {
 
         //Start of my for loop
 
-        for (i = 1; i <= 100; i++) {
+        for (i = 1; i <= 100; i++) { 
             rawBuzzResults = i % 3;
             rawFizzResults = i % 5;
 
