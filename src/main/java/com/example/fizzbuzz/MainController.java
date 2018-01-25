@@ -38,6 +38,7 @@ public class MainController {
            else {
 
                 System.out.print(i);
+                display = display + i;
                 }
 
         } // End of loop
