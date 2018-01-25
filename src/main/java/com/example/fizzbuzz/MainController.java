@@ -3,6 +3,8 @@ package com.example.fizzbuzz;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Scanner;
+
 @RestController
 public class MainController {
 
@@ -16,9 +18,18 @@ public class MainController {
         int i;
         String display = "";
 
+        double userValue; // Stores user number selected for Bonus problem
+        Scanner keyboard = new Scanner(System.in);
+
         //Start of my for loop
 
-        for (i = 1; i <= 100; i++) { 
+        userValue = keyboard.nextDouble();
+
+        System.out.println(userValue);
+
+        for (i = 1; i <= userValue; i++) {
+
+
             rawBuzzResults = i % 3;
             rawFizzResults = i % 5;
 
