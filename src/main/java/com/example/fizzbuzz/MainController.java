@@ -29,7 +29,7 @@ public class MainController {
                 String numberFizz = "Fizz";
             } else if (rawFizzResults == 0) {
                 System.out.print("Buzz");
-                String numberBuzz = "Buzz";
+                String numberBuzz = "Buzz2";
             }
            else {
 
