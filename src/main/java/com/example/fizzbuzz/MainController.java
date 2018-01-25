@@ -14,6 +14,7 @@ public class MainController {
         int rawFizzResults;
         int rawBuzzResults;
         int i;
+        String display = "";
 
         //Start of my for loop
 
@@ -23,13 +24,16 @@ public class MainController {
 
             if ((rawBuzzResults == 0) && (rawFizzResults == 0)) {
                 System.out.print("FizzBuzz");
-                String numberFizzbuzz = "Fizzbuzz";
+                //String numberFizzBuzz = "Fizzbuzz";
+                display = display + "FizzBuzz";
             } else if (rawBuzzResults == 0) {
                 System.out.print("Fizz");
-                String numberFizz = "Fizz";
+               // String numberFizz = "Fizz";
+                display = display + "Fizz";
             } else if (rawFizzResults == 0) {
                 System.out.print("Buzz");
-                String numberBuzz = "Buzz2";
+                //String numberBuzz = "Buzz";
+                display = display + "Buzz";
             }
            else {
 
@@ -39,7 +43,7 @@ public class MainController {
         } // End of loop
 
 
-        return "" ;
+        return display ; //"numberFizzBuzz" + " " + "numberFizz" + " " + "numberBuzz";
     }
     }
 
