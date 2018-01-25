@@ -17,19 +17,29 @@ public class MainController {
 
         //Start of my for loop
 
-        for (i = 0; i <= 100; i++) {
+        for (i = 1; i <= 100; i++) {
             rawBuzzResults = i % 3;
             rawFizzResults = i % 5;
 
-            if( (rawBuzzResults == 0) && (rawFizzResults == 0)) {
+            if ((rawBuzzResults == 0) && (rawFizzResults == 0)) {
                 System.out.print("FizzBuzz");
+                String numberFizzbuzz = "Fizzbuzz";
             } else if (rawBuzzResults == 0) {
                 System.out.print("Fizz");
+                String numberFizz = "Fizz";
             } else if (rawFizzResults == 0) {
                 System.out.print("Buzz");
+                String numberBuzz = "Buzz";
             }
+           else {
 
-        }
-        return null;
+                System.out.print(i);
+                }
+
+        } // End of loop
+
+
+        return "" ;
     }
-}
+    }
+
